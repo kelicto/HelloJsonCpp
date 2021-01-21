@@ -1,0 +1,10 @@
+{
+	"beijing": {
+		"gdp": 20,
+		"population": 200
+	},
+	"shanghai": {
+		"gdp": 20,
+		"population": 200
+	}
+}
