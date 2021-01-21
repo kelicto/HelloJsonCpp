@@ -68,6 +68,11 @@ void write_json(const string& file_path)
 
 	person["age"] = 28;
 	person["name"] = "XiGua";
+	person["items"][0]["id"] = 11;
+	person["items"][0]["name"] = "Test1";
+
+	person["items"][1]["id"] = 22;
+	person["items"][1]["name"] = "Test2";
 
 	root.append(person);
 
