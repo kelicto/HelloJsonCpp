@@ -10,6 +10,10 @@
 using namespace std;
 using namespace Json;
 
+/**
+ * Reads json for test 1.
+ * 
+ */
 void read_json1()
 {
 	ifstream ifs;
@@ -38,6 +42,10 @@ void read_json1()
 	}
 }
 
+/**
+ * Reads json for test 2.
+ * 
+ */
 void read_json2()
 {
 	ifstream ifs;
@@ -60,6 +68,11 @@ void read_json2()
 	cout << "shanghai-population: " << root["shanghai"]["population"].asInt() << endl;
 }
 
+/**
+ * Writes the json with given file path.
+ * 
+ * \param file_path It's for json file path.
+ */
 void write_json(const string& file_path)
 {
 	Value root;
@@ -88,6 +101,11 @@ void write_json(const string& file_path)
 	ofs << content;
 }
 
+/**
+ * It's main function of the application.
+ * 
+ * \return 
+ */
 int main()
 {
 	try
